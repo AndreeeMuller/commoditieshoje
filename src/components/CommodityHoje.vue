@@ -44,17 +44,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-10 col-lg-10 text-center">
-            {{ commoditySelected.rodape }}
-          </div>
-          <div class="col-12 col-md-10 col-lg-10 justify-center text-center">
-            <a :href="commoditySelected.link" target="_blank" style="text-decoration: none; color: white;">
-              <div style="background: #B2C3C6; width: 100px; margin: auto; border-radius: 5px;">
-                Crédito:
-                <img alt="Notícias Agrícolas" src="https://cdn.noticiasagricolas.com.br/static/img/layout/na_logo_minusculo.png">
-              </div>
-            </a>
-          </div>
+          <div class="col-12 col-md-10 col-lg-10 text-center" v-html="commoditySelected.rodape"></div>
         </div>
       </div>
     </div>

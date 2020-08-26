@@ -1,1 +1,10 @@
 // app global css in SCSS form
+
+.q-drawer--left {
+    position: fixed;
+}
+
+.my-menu-link {
+  color: white;
+  background: $positive;
+}
