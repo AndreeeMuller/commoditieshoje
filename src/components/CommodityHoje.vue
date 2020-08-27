@@ -87,7 +87,7 @@ export default {
   methods: {
     getCommodities () {
       this.$q.loading.show()
-      this.$axios.get('https://www.noticiasagricolas.com.br/cotacoes/' + this.commodity + '.json')
+      this.$axios.get('https://cors-anywhere.herokuapp.com/https://www.noticiasagricolas.com.br/cotacoes/' + this.commodity + '.json')
         .then((response) => {
           const newArray = []
           response.data.tabelas.forEach(tab => {
