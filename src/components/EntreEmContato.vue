@@ -1,5 +1,5 @@
 <template>
-  <q-page-sticky position="bottom-right" :offset="[18, 18]">
+  <q-page-sticky position="bottom-right" :offset="[18, 18]" class="hidden">
     <q-btn  v-morph:btnOpen:mygroup:300.resize="morphGroupModel"
             class="absolute-bottom-right"
             fab
