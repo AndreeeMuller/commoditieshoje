@@ -1,7 +1,7 @@
 <template>
-  <CommodityHoje  commodity="cafe"
+  <commodity-hoje commodity="cafe"
                   defaultCommoditiesSelectedSlug="cafe/cafe-mercado-fisico-sindicatos-e-cooperativas">
-  </CommodityHoje>
+  </commodity-hoje>
 </template>
 
 <script>

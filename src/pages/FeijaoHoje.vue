@@ -1,7 +1,7 @@
 <template>
-  <CommodityHoje  commodity="feijao"
+  <commodity-hoje commodity="feijao"
                   defaultCommoditiesSelectedSlug="">
-  </CommodityHoje>
+  </commodity-hoje>
 </template>
 
 <script>

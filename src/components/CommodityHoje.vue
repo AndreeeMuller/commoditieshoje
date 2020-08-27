@@ -1,54 +1,52 @@
 /* eslint-disable no-trailing-spaces */
 <template>
-  <q-page class="q-pa-md">
-    <div class="row items-center" style="min-height: calc(100vh - 32px)">
-      <div class="col-12">
-        <div class="row justify-center q-gutter-y-lg">
-          <div class="col-12 col-md-10 col-lg-10 text-center">
-            <img :alt="commoditySelected.titulo" :src="commoditySelected.imagem">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <q-select label="Commodity"
-                      transition-show="jump-up"
-                      transition-hide="jump-down"
-                      behavior="dialog"
-                      filled
-                      map-options
-                      emit-value
-                      v-model="commoditySelected"
-                      :options="commodities.map(x => { return { value: x, label: x.titulo } })">
-            </q-select>
-          </div>
-          <div class="col-12 col-md-10 col-lg-10">
-            <div class="row justify-center">
-              <div class="col-12 col-md-9 col-lg-7">
-                <q-table  :data="commoditySelected.valores"
-                          :columns="commoditySelected.colunas"
-                          :pagination.sync="pagination"
-                          :filter="filter"
-                          grid
-                          hide-header
-                          hide-bottom
-                          row-key="name">
-                  <template slot="top-left" style="padding-top: 10px;">
-                    Atualizado em {{ commoditySelected.data }}
-                  </template>
-                  <template slot="top-right">
-                    <q-input dense v-model="filter" placeholder="Pesquisar">
-                      <template v-slot:append>
-                        <q-icon name="search" />
-                      </template>
-                    </q-input>
-                  </template>
-                </q-table>
-              </div>
+  <div class="row items-center" style="min-height: calc(100vh - 32px)">
+    <div class="col-12">
+      <div class="row justify-center q-gutter-y-lg">
+        <div class="col-12 col-md-10 col-lg-10 text-center">
+          <img :alt="commoditySelected.titulo" :src="commoditySelected.imagem">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <q-select label="Commodity"
+                    transition-show="jump-up"
+                    transition-hide="jump-down"
+                    behavior="dialog"
+                    filled
+                    map-options
+                    emit-value
+                    v-model="commoditySelected"
+                    :options="commodities.map(x => { return { value: x, label: x.titulo } })">
+          </q-select>
+        </div>
+        <div class="col-12 col-md-10 col-lg-10">
+          <div class="row justify-center">
+            <div class="col-12 col-md-9 col-lg-7">
+              <q-table  :data="commoditySelected.valores"
+                        :columns="commoditySelected.colunas"
+                        :pagination.sync="pagination"
+                        :filter="filter"
+                        grid
+                        hide-header
+                        hide-bottom
+                        row-key="name">
+                <template slot="top-left" style="padding-top: 10px;">
+                  Atualizado em {{ commoditySelected.data }}
+                </template>
+                <template slot="top-right">
+                  <q-input dense v-model="filter" placeholder="Pesquisar">
+                    <template v-slot:append>
+                      <q-icon name="search" />
+                    </template>
+                  </q-input>
+                </template>
+              </q-table>
             </div>
           </div>
-          <div class="col-12 col-md-10 col-lg-10 text-center" v-html="commoditySelected.rodape"></div>
         </div>
+        <div class="col-12 col-md-10 col-lg-10 text-center" v-html="commoditySelected.rodape"></div>
       </div>
     </div>
-  </q-page>
+  </div>
 </template>
 
 <script>

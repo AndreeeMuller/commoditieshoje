@@ -1,7 +1,7 @@
 <template>
-  <CommodityHoje  commodity="trigo"
+  <commodity-hoje commodity="trigo"
                   defaultCommoditiesSelectedSlug="trigo/trigo-mercado-fisico">
-  </CommodityHoje>
+  </commodity-hoje>
 </template>
 
 <script>

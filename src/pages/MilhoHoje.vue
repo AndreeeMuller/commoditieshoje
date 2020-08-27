@@ -1,7 +1,7 @@
 <template>
-  <CommodityHoje  commodity="milho"
+  <commodity-hoje commodity="milho"
                   defaultCommoditiesSelectedSlug="milho/milho-mercado-fisico-sindicatos-e-cooperativas">
-  </CommodityHoje>
+  </commodity-hoje>
 </template>
 
 <script>
