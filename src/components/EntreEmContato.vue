@@ -51,6 +51,8 @@
                     dense
                     filled
                     bg-color="white"
+                    lazy-rules
+                    :rules="[ val => 1 == 1 || 'Campo obrigatório.']"
                     v-model="form.telefone"
                     label="Telefone">
             <template v-slot:prepend>
