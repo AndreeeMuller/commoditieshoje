@@ -121,7 +121,7 @@ module.exports = function (/* ctx */) {
       manifest: {
         name: 'Commodities Hoje',
         short_name: 'Commodities Hoje',
-        description: 'Commodities Hoje (soja, milho, algodao, boi, etc)',
+        description: 'Commodities Hoje - Algodão Hoje - Boi Hoje - Café Hoje - Feijão Hoje - Frango Hoje - Milho Hoje - Soja Hoje - Trigo Hoje - Valor em Sacas - Valor em Arrobas - Valor em Toneladas ',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
