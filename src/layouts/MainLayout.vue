@@ -1,6 +1,7 @@
 <template>
   <!-- <q-layout view="hHh LpR fFf"> -->
   <q-layout view="hHh lpR lff">
+    <q-btn flat @click="drawer = !drawer" round dense icon="menu" style="position: fixed; top: 5px; left: 5px; z-index: 999;" />
     <q-drawer v-model="drawer"
               show-if-above
               :mini="miniState"

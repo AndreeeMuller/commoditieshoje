@@ -4,6 +4,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
+      { path: '/', component: () => import('pages/CommoditiesHoje.vue'), meta: { title: 'Commodities Hoje', image: '' } },
       { path: '/soja-hoje', component: () => import('pages/SojaHoje.vue'), meta: { title: 'Soja Hoje', image: '' } },
       { path: '/milho-hoje', component: () => import('pages/MilhoHoje.vue'), meta: { title: 'Milho Hoje', image: '' } },
       { path: '/algodao-hoje', component: () => import('pages/AlgodaoHoje.vue'), meta: { title: 'Algodão Hoje', image: '' } },

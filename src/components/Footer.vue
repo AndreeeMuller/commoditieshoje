@@ -88,7 +88,7 @@
     <div class="row justify-center q-mt-lg">
       <div class="col-12 col-md-6">
         <p class="text-h3 text-center">
-          Sobre CommoditiesHoje.com.br
+          Sobre o Site
         </p>
         <q-card>
           <q-card-section>
