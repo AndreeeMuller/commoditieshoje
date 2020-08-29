@@ -96,6 +96,9 @@
               Informações
             </p>
             <p class="text-body1">
+              Cotações e notícias de algodão, boi, café, feijão, frango, milho, soja e trigo.
+            </p>
+            <p class="text-body1">
               O site <a style="color: black" href="#">commoditieshoje.com.br</a> não se responsabiliza pelas informações contidas nesta página, pois trata-se de informações de terceiros, conforme a seção "Créditos" logo abaixo.
             </p>
             <p class="text-h6">

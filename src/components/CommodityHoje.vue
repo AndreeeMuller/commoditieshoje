@@ -106,7 +106,7 @@
                           </q-card-section>
                           <q-separator />
                           <q-card-section class="text-center text-subtitle2">
-                            <q-btn label="Ver matéria completa" flat color="primary" @click="dialog.url = props.row.link; dialog.visible = true;" />
+                            <q-btn label="Ver matéria completa" flat color="primary" @click="dialog.url = 'https' +  props.row.link.substring(4); dialog.visible = true;" />
                           </q-card-section>
                         </q-card>
                       </div>
