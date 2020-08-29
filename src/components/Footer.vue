@@ -1,7 +1,10 @@
 <template>
   <div>
-    <div class="row justify-center q-mt-md">
+    <div class="row justify-center q-mt-lg">
       <div class="col-12 col-md-6">
+        <p class="text-h3 text-center">
+          Sobre as Commodities
+        </p>
         <q-card>
           <q-card-section>
             <p class="text-h6">
@@ -82,13 +85,36 @@
         </q-card>
       </div>
     </div>
-    <div class="row justify-center q-mt-md">
+    <div class="row justify-center q-mt-lg">
       <div class="col-12 col-md-6">
+        <p class="text-h3 text-center">
+          Sobre CommoditiesHoje.com.br
+        </p>
         <q-card>
           <q-card-section>
             <p class="text-h6">
-              Créditos:
+              Informações
             </p>
+            <p class="text-body1">
+              O site <a style="color: black" href="#">commoditieshoje.com.br</a> não se responsabiliza pelas informações contidas nesta página, pois trata-se de informações de terceiros, conforme a seção "Créditos" logo abaixo.
+            </p>
+            <p class="text-h6">
+              Contato
+            </p>
+            <p class="text-body1">
+              <a style="color: black" href="mailto:contato@commoditieshoje.com.br">contato@commoditieshoje.com.br</a>
+            </p>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
+    <div class="row justify-center q-mt-lg">
+      <div class="col-12 col-md-6">
+        <p class="text-h3 text-center">
+          Créditos
+        </p>
+        <q-card>
+          <q-card-section>
             <q-btn  v-for="credito in creditos"
                     :key="credito.descricao"
                     class="q-mr-xs q-mb-xs"

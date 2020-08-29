@@ -1,5 +1,6 @@
 <template>
-  <commodity-hoje commodity="feijao"
+  <commodity-hoje commoditySlug="feijao"
+                  commodityNoticiaSlug="feijao-e-graos-especiais"
                   defaultCommoditiesSelectedSlug="">
   </commodity-hoje>
 </template>

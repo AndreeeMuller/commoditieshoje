@@ -1,5 +1,5 @@
 <template>
-  <commodity-hoje commodity="soja"
+  <commodity-hoje commoditySlug="soja"
                   defaultCommoditiesSelectedSlug="soja/soja-mercado-fisico-sindicatos-e-cooperativas">
   </commodity-hoje>
 </template>

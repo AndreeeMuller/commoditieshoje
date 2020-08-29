@@ -1,5 +1,5 @@
 <template>
-  <commodity-hoje commodity="trigo"
+  <commodity-hoje commoditySlug="trigo"
                   defaultCommoditiesSelectedSlug="trigo/trigo-mercado-fisico">
   </commodity-hoje>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <q-page-sticky position="bottom-right" :offset="[18, 18]" class="hidden">
+  <q-page-sticky position="bottom-right" :offset="[18, 18]">
     <q-btn  v-morph:btnOpen:mygroup:300.resize="morphGroupModel"
             class="absolute-bottom-right"
             fab
@@ -11,6 +11,9 @@
     <q-card v-morph:formulario:mygroup:500.resize="morphGroupModel"
             class="absolute-bottom-right q-ma-md bg-primary text-white"
             style="width: 300px; border-bottom-right-radius: 2em">
+      <q-card-section class="text-body2">
+        Este recurso encontra-se em construção, favor enviar e-mail para <a style="color: white" href="mailto:contato@commoditieshoje.com.br">contato@commoditieshoje.com.br</a>
+      </q-card-section>
       <q-card-section class="text-h6">
         Entre em Contato
       </q-card-section>
@@ -21,6 +24,7 @@
                     outlined
                     filled
                     dense
+                    :disable="true"
                     bg-color="white"
                     v-model="form.nome"
                     lazy-rules
@@ -36,6 +40,7 @@
                     maxlength="255"
                     dense
                     filled
+                    :disable="true"
                     bg-color="white"
                     v-model="form.email"
                     lazy-rules
@@ -52,6 +57,7 @@
                     filled
                     bg-color="white"
                     lazy-rules
+                    :disable="true"
                     :rules="[ val => 1 == 1 || 'Campo obrigatório.']"
                     v-model="form.telefone"
                     label="Telefone">
@@ -67,6 +73,7 @@
                     bg-color="white"
                     map-options
                     emit-value
+                    :disable="true"
                     v-model="form.assunto"
                     lazy-rules
                     :rules="[ val => val && val.length > 0 || 'Campo obrigatório.']"
@@ -80,6 +87,7 @@
                     outlined
                     filled
                     dense
+                    :disable="true"
                     bg-color="white"
                     v-model="form.mensagem"
                     lazy-rules
@@ -92,7 +100,7 @@
           </q-input>
         </q-card-section>
         <q-card-actions align="right" style="margin-top: 0">
-          <q-btn flat round icon="send" type="submit" />
+          <q-btn flat round icon="send" type="submit" :disable="true"/>
         </q-card-actions>
       </q-form>
     </q-card>

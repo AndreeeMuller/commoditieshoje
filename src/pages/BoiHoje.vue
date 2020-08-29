@@ -1,5 +1,5 @@
 <template>
-  <commodity-hoje commodity="boi"
+  <commodity-hoje commoditySlug="boi"
                   defaultCommoditiesSelectedSlug="">
   </commodity-hoje>
 </template>
